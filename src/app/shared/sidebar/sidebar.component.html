@@ -1,13 +1,13 @@
-<div class="bg-dark boder-right p-3" id="sidebar">
+<div class="bg-danger boder-right p-3" id="sidebar">
     <h3 class="text-light">
       GIFS
     </h3>
     <hr class="text-light"/>
 
     <div class="list-group list-reset">
-      <a href="#" class="list-group-item list-group-item-action">
-        Dashboard
+      <a *ngFor="let item of historial" href="#" class="list-group-item list-group-item-action">
+        {{item | titlecase}}
       </a>
     </div>
-
+ 
   </div>  
